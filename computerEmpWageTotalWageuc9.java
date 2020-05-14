@@ -1,15 +1,18 @@
 public class computerEmpWageTotalWageuc9 {
         public static final int IS_PART_TIME = 1;
         public static final int IS_FULL_TIME = 2;
+
 	private final String company;
 	private final int empRatePerHour;
 	private final int numOfWorkingDays;
 	private final int maxHourPerMonth;
 	private int totalEmpWage;
-        public computerEmpWageTotalWageuc9(String company, int empRatePerHour,int numOfWorkingDays,int maxHourPerMonth) {
+        
+	public computerEmpWageTotalWageuc9(String company, int empRatePerHour,
+					int numOfWorkingDays,int maxHourPerMonth) {
                 this.company = company;
 		this.empRatePerHour = empRatePerHour;
-		this.numofWorkingDays = numOfWorkingDays;
+		this.numOfWorkingDays = numOfWorkingDays;
 		this.maxHourPerMonth = maxHoursPerMonth;
 	}
 	public void computeEmpWage() {
@@ -34,7 +37,7 @@ public class computerEmpWageTotalWageuc9 {
                 totalEmpWage = totalEmpHrs * empRatePerHour;
    
         }
-	@Override
+	
 	public String toString() {
 		return *Total Emp Wage for Company: * +company+ " is: " + totalEmpWage;
 	}
